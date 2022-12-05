@@ -11,16 +11,16 @@ D) S to set setting and S+V to store setting in the eeprom
 Description for 2 actuators and 4 actuators setup:
 
 name DEFAULT2 DEFAULT4 DESCRIPTION
-00   176      200      speed
-01   24       25       ?
-02   1        1        ?
-03   0.7      0.5      ? (changes when switch between cm/in)
+00   176      200      speed? 1-999
+01   24       25       speed? 1-100
+02   1        1        0-1
+03   0.7      0.5      ? (changes when switch between cm/in) 0.0-25.5cm
 04   65       22.7     span (changes when switch between cm/in)
 05   60       37       min height (changes when switch between cm/in)
-06   5.0      2.7      ? (changes when switch between cm/in)
-07   4        4        ?
+06   5.0      2.7      ? (changes when switch between cm/in) 0-999cm
+07   4        4        0-8
 08   224      230      voltage threshold? (incorrect setting forces controller to stop operation)
-09   128      76       ?
+09   128      76       1-255
 10   2        4        number of actuators (can be only decreased)
 
 On the board you can find EEPROM 24C02. To set default just set it to 0xFF.
