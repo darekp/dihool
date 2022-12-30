@@ -1,3 +1,4 @@
+```
 # dihool
 
 dihool.com electric linear actuators service menu description
@@ -17,11 +18,11 @@ name DEFAULT2 DEFAULT4 DESCRIPTION
 03   0.7      0.5      ? (changes when switch between cm/in) 0.0-25.5cm
 04   65       22.7     span (changes when switch between cm/in)
 05   60       37       min height (changes when switch between cm/in)
-06   5.0      2.7      ? (changes when switch between cm/in) 0-999cm
-07   4        4        0-8
-08   224      230      voltage threshold? (incorrect setting forces controller to stop operation)
-09   128      76       1-255
-10   2        4        number of actuators (can be only decreased)
+06   5.0      2.7      ? (changes when switch between cm/in) 0-999cm - collision push back in mm
+07   4        4        0-8 - collision sensitivity
+08   224      230      voltage threshold? (incorrect setting forces controller to stop operation!)
+09   128      76       1-255 ?
+10   2        4        number of actuators (can be only decreased!)
 
 On the board you can find EEPROM 24C02. To set default just set it to 0xFF.
 
@@ -32,3 +33,8 @@ press 1+S and set desired time
 
 ## Lock/Unlock
 press 2+S and wait to lock/unlock
+
+## Reset
+hold A/V for ~5s
+
+```
